@@ -3586,7 +3586,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell1_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell1_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell1_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=1}} {{area=@{spell1_area}}} {{duration=@{spell1_duration}}} {{range=@{spell1_range}}} {{instant=@{spell1_instant}}} {{description=@{spell1_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell1_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell1_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=1}} {{area=@{spell1_area}}} {{duration=@{spell1_duration}}} {{range=@{spell1_range}}} {{instant=@{spell1_instant}}} {{description=@{spell1_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell1_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3604,7 +3604,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell2_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell2_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell2_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=2}} {{area=@{spell2_area}}} {{duration=@{spell2_duration}}} {{range=@{spell2_range}}} {{instant=@{spell2_instant}}} {{description=@{spell2_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell2_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell2_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=2}} {{area=@{spell2_area}}} {{duration=@{spell2_duration}}} {{range=@{spell2_range}}} {{instant=@{spell2_instant}}} {{description=@{spell2_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell2_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3622,7 +3622,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell3_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell3_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell3_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=3}} {{area=@{spell3_area}}} {{duration=@{spell3_duration}}} {{range=@{spell3_range}}} {{instant=@{spell3_instant}}} {{description=@{spell3_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell3_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell3_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=3}} {{area=@{spell3_area}}} {{duration=@{spell3_duration}}} {{range=@{spell3_range}}} {{instant=@{spell3_instant}}} {{description=@{spell3_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell3_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3640,7 +3640,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell4_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell4_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell4_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=4}} {{area=@{spell4_area}}} {{duration=@{spell4_duration}}} {{range=@{spell4_range}}} {{instant=@{spell4_instant}}} {{description=@{spell4_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell4_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell4_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=4}} {{area=@{spell4_area}}} {{duration=@{spell4_duration}}} {{range=@{spell4_range}}} {{instant=@{spell4_instant}}} {{description=@{spell4_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell4_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3658,7 +3658,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell5_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell5_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell5_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=5}} {{area=@{spell5_area}}} {{duration=@{spell5_duration}}} {{range=@{spell5_range}}} {{instant=@{spell5_instant}}} {{description=@{spell5_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell5_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell5_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=5}} {{area=@{spell5_area}}} {{duration=@{spell5_duration}}} {{range=@{spell5_range}}} {{instant=@{spell5_instant}}} {{description=@{spell5_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell5_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3676,7 +3676,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell6_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell6_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell6_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=6}} {{area=@{spell6_area}}} {{duration=@{spell6_duration}}} {{range=@{spell6_range}}} {{instant=@{spell6_instant}}} {{description=@{spell6_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell6_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell6_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=6}} {{area=@{spell6_area}}} {{duration=@{spell6_duration}}} {{range=@{spell6_range}}} {{instant=@{spell6_instant}}} {{description=@{spell6_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell6_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3694,7 +3694,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell7_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell7_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell7_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=7}} {{area=@{spell7_area}}} {{duration=@{spell7_duration}}} {{range=@{spell7_range}}} {{instant=@{spell7_instant}}} {{description=@{spell7_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell7_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell7_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=7}} {{area=@{spell7_area}}} {{duration=@{spell7_duration}}} {{range=@{spell7_range}}} {{instant=@{spell7_instant}}} {{description=@{spell7_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell7_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3712,7 +3712,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell8_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell8_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell8_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=8}} {{area=@{spell8_area}}} {{duration=@{spell8_duration}}} {{range=@{spell8_range}}} {{instant=@{spell8_instant}}} {{description=@{spell8_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell8_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell8_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=8}} {{area=@{spell8_area}}} {{duration=@{spell8_duration}}} {{range=@{spell8_range}}} {{instant=@{spell8_instant}}} {{description=@{spell8_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell8_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3730,7 +3730,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell9_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell9_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell9_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=9}} {{area=@{spell9_area}}} {{duration=@{spell9_duration}}} {{range=@{spell9_range}}} {{instant=@{spell9_instant}}} {{description=@{spell9_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell9_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell9_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=9}} {{area=@{spell9_area}}} {{duration=@{spell9_duration}}} {{range=@{spell9_range}}} {{instant=@{spell9_instant}}} {{description=@{spell9_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell9_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                         <div class="grid-spell-list-details">
@@ -3748,7 +3748,7 @@
                                 <option value="utility">Utility</option>
                             </select>
                             <input type="checkbox" class="checkbox-center" name="attr_spell10_instant" value="Yes" />
-                            <button type="roll" class="roller-button" name="attr_spell10_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell10_name}}} {{character=@{character_name}}} {{roll=[[1d100]]}} {{level=10}} {{area=@{spell10_area}}} {{duration=@{spell10_duration}}} {{range=@{spell10_range}}} {{instant=@{spell10_instant}}} {{description=@{spell10_desc}}}">T</button>
+                            <button type="roll" class="roller-button" name="attr_spell10_cast" title="Cast Spell" value="@{wtype} &{template:spellcast} {{action=?{Cast or Prepare?|Cast,Casting Spell|Prepare,Preparing Spell}}} {{name=@{spell10_name}}} {{character=@{character_name}}} {{roll=[[1d100 + @{skill_basespells_total_bonus}[Base Spell OB]]]}} {{level=10}} {{area=@{spell10_area}}} {{duration=@{spell10_duration}}} {{range=@{spell10_range}}} {{instant=@{spell10_instant}}} {{description=@{spell10_desc}}}">T</button>
                         </div>
                         <textarea class="textarea-spell-description" name="attr_spell10_desc" placeholder="Spell Description" spellcheck="false"></textarea>
                     </div>
@@ -4965,10 +4965,11 @@ on("clicked:recalculate sheet:opened change:stat_pr_total_bonus change:stat_ap_v
 });
 
 /* POWERPOINTS Worker */
-on("clicked:recalculate sheet:opened change:stat_it_value change:stat_ig_value change:realm change:profession change:power_point_multiplier", function() {
-    getAttrs(["stat_it_value", "stat_ig_value", "realm", "profession","power_point_multiplier"], function(values) {
+on("clicked:recalculate sheet:opened change:level change:stat_it_value change:stat_ig_value change:realm change:profession change:power_point_multiplier", function() {
+    getAttrs(["level","stat_it_value", "stat_ig_value", "realm", "profession","power_point_multiplier"], function(values) {
         let powerPoints = 0;
-        let multiplier = parseInt(values["power_point_multiplier"],10) || 0;
+        let multiplier = parseInt(values["power_point_multiplier"],10) || 1;
+        let level = parseInt(values["level"],10) || 1;
         switch (values["profession"]) {
             case "conjurer":
                 powerPoints = powerPointBase((parseInt(values["stat_it_value"], 10) + parseInt(values["stat_ig_value"], 10))/2 || 0);
@@ -4988,7 +4989,7 @@ on("clicked:recalculate sheet:opened change:stat_it_value change:stat_ig_value c
 
         }
         setAttrs({
-            "power_points_max": powerPoints * multiplier
+            "power_points_max": powerPoints * multiplier * level
         });
     });
 });
