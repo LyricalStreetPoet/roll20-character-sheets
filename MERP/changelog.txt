@@ -1,0 +1,95 @@
+02-28-2021
+
+GENERAL
+- Converted entire sheet from tables to CSS Grid
+- Converted most autocalculations to sheet workers.  Sheet now loads and runs 10X faster.  
+- Reskinned to condense space and look more like the old book material and use D100s (Feedback appreciated, but know we can't please everybody)
+- Changed font for text fields to feel more like filling out a paper sheet (left the labels as the original font)
+- Changed roller icon from d20s to d100s  
+- Added broadcast toggle to the top menu (moved from settings tab)
+- Tagged all adjustments in the rollers so you can see what all is included on every roll (let me know if i missed some). 
+- Added fumble queries to rollers where the fumble can vary.
+- Added parry queries to the melee OB rollers.
+- Added helmet modifier to orientation global roller.  You can pretty much use this for perception rolls now.
+
+PERSONAL (Player)
+- Added player/npc toggle
+- Addded advanced classes
+- Added homebrew options for race and class (opened race/class autocalc fields to support)
+- Added a way to track your original rolls and background adjustements for stats
+- Added stats SM rollers
+- Changed DB special to include adrenal defense calculation
+- Added cold / heat resist
+- Added vision area and autocalc for book races
+- Added custom language area
+- Added some BG option autocalculations (need to do more)
+- Renamed the HP field maxium to support token health bars.  This might break some sheets until you hit "recalculate/upgrade"
+- Fixed some repeating sections so you can delete.
+- Added Ambidextrous roller / tracker
+- Added point-buy and rolled stats
+- A
+
+PERSONAL (NPC)
+- Fixed racial defensive bonus (accidentally broke on last update)
+- Added stats section
+- Added creature templates (have about half of them populated, need to do more)
+- Added primary and seconary crits to attacks
+- Added autocalculations to compute the crit types based on the attack size and type
+- Added a weight field (for encumbrance) and linked it with the Player weight
+- Fixed some calculation bugs that existed before for encumbrance and other stats
+- Moved some of the dropdowns to the sections they affected (speed, criticals, quickness)
+- Added an NPC quick stats generator.
+
+SKILLS
+- Added a primary/secondary toggle
+- Autocalc background ranks
+- Opened a lot of locked fieldss to support home brew
+- Added a martial arts and adrenal defense skills to support advanced professions
+- Added standard secondary skills (the custom skills section still exists)
+- Fixed some wrong text and labels
+
+SPELLS
+- Fixed powerpoint calculation to include multiplier
+- Added rollers to learning spell lists and determine success/failure.
+- Added cast rollers to output the spell details.
+- Changed spell description to support longer description (multi-line).
+- Renamed the spell point maximum field to support token bars.  This might break some sheets until you hit "recalculate/upgrade"
+- Changed collapse arrow from character to an image.
+
+EQUIPMENT
+- Totally rewrote the weapon area that was added in the last release.
+- Weapons now support templates and will auto-populate the book weapons with stats.
+- Let you name your weapon now! (GLAMDRING!)
+- Added melee and ranged rollers since some weapons can be both (e.g. daggers)
+- Added a note section to weapons
+- Added a modifiers section to indicate attack modifiers.
+- Changed collapse arrow from character to an image.
+
+SETTINGS
+- Added a character creation settings for point-buy and rolled stats
+- Added a recalculate/upgrade button to run all of the workers to update your sheet to the latest version.  Not all workers run at load any more to support home brew values.
+
+ROLL TEMPLATES 
+- Removed the bonus and penalty section (they are tagged in the rolls themselves now)
+- Added critical info to attack rolls
+- Added parry info for attack rolls
+- Added melee/ranged attack templates for weapons
+- Added conditional modifiers to attack rolls (this might be removed when the GM section tab is finished)
+- Made the main roll bigger so it stands out
+- Fixed some bugs in the templates
+- Woud like a lot of feedback here.  I thought about having different colors for the different actions to make it more obvious (e.g. attacks reddish, moving maneuvers blueish, static maneuvers: brownish)
+
+PLANNED FEATURES
+- Racial Sleep needed tracker.  
+- Rest button to simulate a rest and heal / replenish power points.
+- Injury tracker
+- Currency Exchange button to automatically recalculate to the largest denominations 
+- Inventory item templates for standard MERP items
+- More background option automation (skill bonuses and special features like Lightning Reactions)
+- Add all background bonuses for secondary skills
+- Populate more creature templates
+- Populate base spell lists
+- Add forage action
+- Add default plants and herbs
+- Deduct from powerpoints when a spell is cast?
+- GM Tab for resolving encounters with auto-lookup tables (both combat and maneuvers)

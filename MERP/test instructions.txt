@@ -1,0 +1,17 @@
+Testing Instructions (Pro Subscription Required)
+
+1. Start a new game without a character sheet selected.
+2. Go to the setting settings dropdown for the game and select "Game Settings"
+3. Copy the contents of the merp_2nd_ed_sheet.html file to the HTML Layout tab of your custom character sheet.
+4. Copy the contents of the merp_2nd_ed_sheet.css file to the CSS Styling tab of your custom character sheet.
+5. Click "Save Changes at the bottom of the screen"
+
+Once you are in the campaign, create a new character and have fun!
+
+To test existing characters:
+
+1. Click on the gear icon and scroll to the bottom.
+2. Click the "Transmogrifier" in the Experimental Features section
+3. Select your existing game in the dropdown on the left.
+4. Drag one of the characters from the left side to the right.
+5. Open the character in your new game and let me know what is not working or missing.
