@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo|Pirata+One|Architects+Daughter&display=swap');
+
+/* Make number fields in Firefox work like text fields */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/* Remove the up/down arrows from number voxes from Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Make all input and select boxes ignore padding and margin for size */
+input, select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Remove the down arrow from select boxes */
+select, option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Hide the down arrow for select boxes for IE browsers */
+select::-ms-expand {
+  display: none;
+}
+
+/* This div encompasses the entire character sheet */
+.sheet-main {
+    background-color: #FFF;
+    font-family: serif;
+    font-size: 1.1em;    
+    text-align: left;
+    border: 1px solid #999;
+    width: 850px;
+}
+
+/* Format text boxes to look like fill-in paper forms */
+.sheet-main input {
+    border-radius: 0px;
+    outline: 0px;
+    border-width: 0 0 1px 0;
+    border-color: #CCC;
+    font-size: 1em;
+    color: 111;
+    padding: 0;
+    margin: 0;
+    font-family: "Architects Daughter";
+}
+
+/* Format select boxes to they look like the text boxes above */
+.sheet-main select {
+    height: 1.2em;
+    border-radius: 0px;
+    outline: 0px;
+    border-width: 0 0 1px 0;
+    border-color: #CCC;
+    font-size: 1em;
+    color: 111;
+    padding: 0;
+    margin: 0;
+    font-family: "Architects Daughter";
+}
+
+.sheet-main textarea {
+    border-color: #CCC;
+    font-size: 0.9em;
+    color: 111;
+    padding: 2px;
+    margin: 0;
+    font-family: "Architects Daughter";
+}    
+
+/* Show the content for the active tab */
+.sheet-form-font[value="serif"] ~ .sheet-main input, 
+.sheet-form-font[value="serif"] ~ .sheet-main select, 
+.sheet-form-font[value="serif"] ~ .sheet-main textarea {
+    font-family: serif;
+}
+
+.sheet-form-font[value="sans-serif"] ~ .sheet-main input, 
+.sheet-form-font[value="sans-serif"] ~ .sheet-main select,
+.sheet-form-font[value="sans-serif"] ~ .sheet-main textarea {
+    font-family: sans-serif;
+}
+
+
+/* When a text box is focused, highlight it. */
+.sheet-main input:focus {
+    background-color: #EFEFEF;
+    border-color: #005;
+    color: #005;
+}
+
+.sheet-main select:focus {
+    background-color: #EFEFEF;
+    border-color: #005;
+    color: #005;
+}
+
+.sheet-main textarea:focus {
+    background-color: #EFEFEF;
+    border-color: #005;
+    color: #005;
+}
+
+.sheet-main input:read-only {
+    color: #333;
+    width: 27px;
+    border-width: 0;
+    background-color: #FFF;
+    font-size: 1.2em;
+    font-family: serif;
+    cursor: default;
+} 
+
+.sheet-main input[type=number] {
+    text-align: right;
+    width: 27px;
+    padding-right: 2px;
+}
